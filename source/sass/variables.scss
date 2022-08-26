@@ -1,0 +1,58 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #030a1a;
+$color-default-white:               #ffffff;
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+$color-sapphire:            #102654;
+$color-egyptian-blue:       #103aae;
+$color-torch-red:           #ed0233;
+
+// Gradient
+
+$red-to-blue-right:                 linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+$red-to-blue-bottom:                linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$blue-to-red-conic:                 conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-default:                        "Roboto Condensed", "Arial", "Helvetica", sans-serif;
+$ff-alternative:                    "Bebas Neue ", "Impact", "Charcoal", sans-serif;
+$ff-alternative-cyrillic:           "Bebas Neue Cyrillic", "Impact", "Charcoal", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-768:                            768px;
+$vp-1200:                           1200px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

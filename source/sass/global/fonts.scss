@@ -1,0 +1,52 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src:
+    url("../fonts/RobotoCondensed-300.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-300.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src:
+    url("../fonts/RobotoCondensed-400.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+
+  font-display: swap;
+  src:
+    url("../fonts/RobotoCondensed-700.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-700.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-family: "Bebas Neue";
+
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeue.woff2") format("woff2"),
+    url("../fonts/BebasNeue.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-family: "Bebas Neue Cyrillic";
+
+  font-display: swap;
+  src:
+    url("../fonts/BebasNeue-Cyrillic.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Cyrillic.woff") format("woff");
+}
