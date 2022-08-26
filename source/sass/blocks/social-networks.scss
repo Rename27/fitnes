@@ -1,0 +1,18 @@
+.social-networks__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 37px;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+.social-networks__item {
+  padding: 4px 0;
+}
+
+.social-networks__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: inherit;
+}

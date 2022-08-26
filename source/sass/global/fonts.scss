@@ -34,19 +34,32 @@
 @font-face {
   font-style: normal;
   font-family: "Bebas Neue";
+  font-weight: 400;
 
   font-display: swap;
   src:
-    url("../fonts/BebasNeue.woff2") format("woff2"),
-    url("../fonts/BebasNeue.woff") format("woff");
+    url("../fonts/BebasNeue-400.woff2") format("woff2"),
+    url("../fonts/BebasNeue-400.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-family: "Bebas Neue Cyrillic";
+  font-family: "Bebas Neue";
+  font-weight: 700;
 
   font-display: swap;
   src:
-    url("../fonts/BebasNeue-Cyrillic.woff2") format("woff2"),
-    url("../fonts/BebasNeue-Cyrillic.woff") format("woff");
+    url("../fonts/BebasNeue-700.woff2") format("woff2"),
+    url("../fonts/BebasNeue-700.woff") format("woff");
 }
+
+// @font-face {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-family: "Bebas Neue";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/BebasNeue-700.woff2") format("woff2"),
+//     url("../fonts/BebasNeue-700.woff") format("woff");
+// }
