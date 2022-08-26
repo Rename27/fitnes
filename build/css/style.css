@@ -411,15 +411,17 @@ template {
 @font-face {
   font-style: normal;
   font-family: "Bebas Neue";
+  font-weight: 400;
   font-display: swap;
-  src: url("../fonts/BebasNeue.woff2") format("woff2"), url("../fonts/BebasNeue.woff") format("woff");
+  src: url("../fonts/BebasNeue-400.woff2") format("woff2"), url("../fonts/BebasNeue-400.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-family: "Bebas Neue Cyrillic";
+  font-family: "Bebas Neue";
+  font-weight: 700;
   font-display: swap;
-  src: url("../fonts/BebasNeue-Cyrillic.woff2") format("woff2"), url("../fonts/BebasNeue-Cyrillic.woff") format("woff");
+  src: url("../fonts/BebasNeue-700.woff2") format("woff2"), url("../fonts/BebasNeue-700.woff") format("woff");
 }
 
 *,
@@ -441,7 +443,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Bebas Neue ", "Impact", "Charcoal", sans-serif;
+  font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   color: #030a1a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -615,9 +617,169 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.main-screen {
+  padding-top: 30px;
+  padding-bottom: 51px;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  color: #ffffff;
+}
+
+.main-screen__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-screen__header {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 21px;
+  font-family: "Bebas Neue", "Impact", "Charcoal", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.main-screen__logo {
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 700;
+}
+
+.main-screen__phone {
+  letter-spacing: 0.9px;
+  color: inherit;
+  font-weight: 700;
+}
+
+.main-screen__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 395px 500px;
+  grid-template-columns: 395px 500px;
+  -webkit-column-gap: 64px;
+  -moz-column-gap: 64px;
+  column-gap: 64px;
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.main-screen__text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content;
+  -ms-grid-columns: min-content;
+  grid-template-columns: -webkit-min-content;
+  grid-template-columns: min-content;
+  -ms-grid-rows: 66px 196px 133px;
+  grid-template-rows: 66px 196px 133px;
+  padding: 116px 0 0;
+  text-align: right;
+}
+
+.main-screen__text h2 {
+  margin: 0;
+  font-family: "Bebas Neue", "Impact", "Charcoal", sans-serif;
+  font-size: 49px;
+  line-height: 59px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+}
+
+.main-screen__text h1 {
+  grid-column: 1/-2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  justify-self: flex-end;
+  width: 395px;
+  margin: 0;
+  font-family: "Bebas Neue", "Impact", "Charcoal", sans-serif;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
+}
+
+.main-screen__text p {
+  align-self: flex-end;
+  grid-column: 1/-2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 0;
+  padding: 0 0 13px;
+  width: 132px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-screen__text a {
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 19px 0;
+  width: 234px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: inherit;
+  border: 4px solid #ffffff;
+}
+
+.main-screen__content img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.main-screen__social-networks {
+  grid-column: 2/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.social-networks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 0 37px;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+.social-networks__item {
+  padding: 4px 0;
+}
+
+.social-networks__link {
+  font-size: 12px;
+  line-height: 14px;
+  color: inherit;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -631,10 +793,119 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .main-screen {
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  .main-screen__header {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .main-screen__phone {
+    letter-spacing: 0.6px;
+  }
+
+  .main-screen__content {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    height: 390px;
+  }
+
+  .main-screen__text {
+    -ms-grid-rows: 45px 165px 105px;
+    grid-template-rows: 45px 165px 105px;
+    padding: 52px 0 0;
+  }
+
+  .main-screen__text h2 {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .main-screen__text h1 {
+    width: 324px;
+    font-size: 86px;
+    line-height: 86px;
+    letter-spacing: 2.6px;
+  }
+
+  .main-screen__text p {
+    width: 113px;
+  }
+
+  .main-screen__text a {
+    width: 187px;
+  }
+
+  .main-screen__content img {
+    height: 390px;
+  }
+
+  .main-screen__social-networks {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .main-screen {
+    padding-top: 20px;
+    padding-bottom: 61px;
+  }
+
+  .main-screen__header {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .main-screen__content {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .main-screen__text {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    -ms-grid-rows: 45px 165px 91px;
+    grid-template-rows: 45px 165px 91px;
+    padding: 70px 0 0;
+  }
+
+  .main-screen__text h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main-screen__text h1 {
+    width: 213px;
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .main-screen__text p {
+    -ms-grid-column-align: right;
+    justify-self: right;
+    margin: 0 179px 0 0;
+    padding: 0 0 25px;
+    width: 111px;
+  }
+
+  .main-screen__text a {
+    width: 100%;
+  }
+
+  .main-screen__content img {
+    display: none;
   }
 }
