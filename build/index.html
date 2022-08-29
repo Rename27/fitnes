@@ -85,19 +85,81 @@
                 <img src="img/gym-video-poster@1x.jpg" srcset="img/gym-video-poster@2x.jpg 2x" alt="Обложка видео"
                   width="364" height="228">
               </picture>
-              <button>
-                <img src="img/svg/video-btn-icon.svg" alt="Кнопка воспроизведения видео">
-                <span class="visually-hidden">Запусить видео</span>
-              </button>
             </a>
+            <button>
+              <img src="img/svg/video-btn-icon.svg" alt="Кнопка воспроизведения видео">
+              <span class="visually-hidden">Запусить видео</span>
+            </button>
           </div>
         </div>
-  </div>
-  </section>
-  </main>
-  <footer>
-    <div class="container"></div>
-  </footer>
+      </section>
+      <section class="subscriptions">
+        <div class="container">
+          <div class="subscriptions__wrapper">
+            <h1>Абонементы</h1>
+            <div class="subscriptions__tabs tabs">
+              <ul class="tabs__list">
+                <li class="tabs__item tabs__item--current">1 месяц</li>
+                <li class="tabs__item">6 месяцев</li>
+                <li class="tabs__item">12 месяцев</li>
+              </ul>
+            </div>
+            <div class="subscriptions__cards cards">
+              <ul class="cards__list">
+                <li class="cards__item">
+                  <h2>С тренером</h2>
+                  <p>12 занятий</p>
+                  <h3>
+                    <span>5000</span>
+                    5000
+                  </h3>
+                  <svg width="30" height="42">
+                    <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                  </svg>
+                  <a href="#">Купить абонемент</a>
+                </li>
+                <li class="cards__item">
+                  <h2>Дневной</h2>
+                  <p>с 8:00 до 17:00</p>
+                  <h3>
+                    <span>1700</span>
+                    1700
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                    </svg>
+                  </h3>
+                  <a href="#">Купить абонемент</a>
+                </li>
+                <li class="cards__item">
+                  <h2>Полный день</h2>
+                  <p>с 8:00 до 22:00</p>
+                  <h3>
+                    <span>2700</span>
+                    2700
+                    <svg width="30" height="42">
+                      <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                    </svg>
+                  </h3>
+                  <a href="#">Купить абонемент</a>
+                </li>
+              </ul>
+            </div>
+            <div class="subscriptions__image">
+              <picture>
+                <source type="image/webp" srcset="
+              img/weights@1x.webp 1x,
+              img/weights@2x.webp 2x">
+                <!-- 1х: 500px; 2x: 1000px -->
+                <img src="img/weights.jpg" srcset="img/weights@2x.jpg 2x" alt="Supergym-man" width="321" height="384">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
