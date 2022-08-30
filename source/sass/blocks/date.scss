@@ -1,0 +1,74 @@
+.date {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.date h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 400;
+
+  @include vp-1199 {
+    margin: 0 0 1px;
+    font-size: 12px;
+  }
+}
+
+.date__day,
+.date__time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.date__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-rows: 20px 20px;
+  margin: 0 0 30px;
+  column-gap: 7px;
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+    content: "";
+  }
+
+  @include vp-1199 {
+    grid-template-rows: 12px 15px;
+    column-gap: 4px;
+    margin: 0 0 7px;
+  }
+}
+
+.date__wrapper h3 {
+  grid-row: 2 span;
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin: 0;
+  font-size: 40px;
+  line-height: 31px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+
+.date__wrapper p {
+  grid-column: 2/3;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+
+  @include vp-1199 {
+    margin: 0;
+    font-size: 10px;
+  }
+}
