@@ -1,0 +1,151 @@
+.coaches {
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+}
+
+.coaches h1 {
+  margin: 0 0 50px 2px;
+  font-family: $ff-alternative;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.5px;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin: 0 0 41px 2px;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin: 0 0 43px 2px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.coaches__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.coaches__item {
+  display: grid;
+  grid-template-columns: max-content;
+
+  @include vp-1199 {
+    justify-content: center;
+  }
+
+  &:hover {
+    h2 {
+      display: none;
+    }
+
+    .coaches__description {
+      visibility: visible;
+    }
+  }
+}
+
+.coaches__image {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: grid;
+  width: fit-content;
+}
+
+.coaches picture,
+.coaches img {
+  grid-column: 1/1;
+  grid-row: 1/1;
+
+  @include vp-1199 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 228px;
+    height: 274px;
+  }
+}
+
+.coaches h2 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  justify-self: center;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0 0 23px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: $color-default-white;
+}
+
+
+.coaches__description {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 51px 0 10px;
+  color: $color-default-white;
+  background: rgba($color-sapphire, 0.89);
+  visibility: hidden;
+}
+
+.coaches__description h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: $color-default-white;
+}
+
+.coaches__description p {
+  margin: 0 0 38px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #b6bdcc;
+}
+
+.coaches__description-list {
+  margin: 0;
+  padding: 0 0 0 32px;
+  list-style-type: none;
+}
+
+.coaches__description-item {
+  position: relative;
+  margin: 0 0 13px;
+  max-width: 150px;
+  font-size: 14px;
+  line-height: 21px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+    content: "";
+  }
+}
