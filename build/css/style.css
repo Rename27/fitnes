@@ -392,7 +392,8 @@ template {
 }
 
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #afafaf;
+  --swiper-navigation-size: 32px;
 }
 
 .swiper {
@@ -602,6 +603,71 @@ template {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 48%;
+  width: calc(var(--swiper-navigation-size) / 16 * 32);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: -24px;
+  right: auto;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "prev";
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: -24px;
+  left: auto;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: "next";
+}
+
+.swiper-button-lock {
+  display: none;
 }
 
 @font-face {
@@ -1500,7 +1566,13 @@ button,
 }
 
 .coaches {
-  padding-bottom: 120px;
+  position: relative;
+  padding: 0 56px 120px 56px;
+  max-width: 1272px;
+}
+
+.coaches .swiper {
+  position: initial;
 }
 
 .coaches h1 {
@@ -1897,6 +1969,19 @@ button,
 
   .coaches {
     padding-bottom: 100px;
+    max-width: 85%;
+  }
+
+  .coaches .swiper-button-prev,
+  .coaches .swiper-rtl .swiper-button-next {
+    left: -36px;
+    top: 48.5%;
+  }
+
+  .coaches .swiper-button-next,
+  .coaches .swiper-rtl .swiper-button-prev {
+    right: -36px;
+    top: 48.5%;
   }
 
   .coaches h1 {
@@ -2110,6 +2195,24 @@ button,
 
   .coaches {
     padding-bottom: 70px;
+    max-width: none;
+  }
+
+  .coaches .swiper-button-prev,
+  .coaches .swiper-rtl .swiper-button-next {
+    left: -12px;
+    top: 51%;
+  }
+
+  .coaches .swiper-button-next,
+  .coaches .swiper-rtl .swiper-button-prev {
+    right: -12px;
+    top: 51%;
+  }
+
+  .coaches .swiper-button-prev::after,
+  .coaches .swiper-button-next::after {
+    font-size: 19px;
   }
 
   .coaches h1 {
