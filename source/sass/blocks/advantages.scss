@@ -1,0 +1,258 @@
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.advantages h1 {
+  margin: 0 0 70px;
+  font-family: $ff-alternative;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.5px;
+  text-align: center;
+
+  @include vp-1199 {
+    margin: 0 0 51px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 27px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
+
+.advantages__wrapper {
+  display: grid;
+  grid-template-rows: 155px 155px;
+  grid-template-columns: 341px auto 341px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1040px;
+  list-style-type: none;
+
+  @include vp-1199 {
+    grid-template-rows: 114px 239px 112px;
+    grid-template-columns: 334px 334px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+  display: flex;
+
+  &:nth-of-type(2n-1),
+  &:nth-of-type(2n) {
+    margin: -27px 0 0 0;
+  }
+
+  &:nth-of-type(odd) {
+    padding: 0 0 0 20px;
+  }
+
+  &:nth-of-type(3n),
+  &:nth-of-type(4n) {
+    margin: 53px 0 0;
+  }
+
+  @include vp-1199 {
+    &:nth-of-type(2n-1),
+    &:nth-of-type(2n) {
+      margin: -24px 0 0 0;
+    }
+
+    &:nth-of-type(odd) {
+      padding: 0;
+    }
+
+    &:nth-of-type(even) {
+      padding: 0 0 0 20px;
+    }
+
+    &:nth-of-type(3n),
+    &:nth-of-type(4n) {
+      margin: 26px 0 0;
+    }
+  }
+
+  @include vp-767 {
+    margin: 0 0 21px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:nth-of-type(2n-1),
+    &:nth-of-type(2n) {
+      margin: 0 0 21px;
+    }
+
+    &:nth-of-type(even) {
+      padding: 0;
+    }
+
+    &:nth-of-type(2n),
+    &:nth-of-type(4n) {
+      margin: 0 0 44px;
+    }
+  }
+}
+
+.advantages__key {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__key p {
+  margin: 0 30px 0 0;
+  font-size: 71px;
+  line-height: 106px;
+  font-weight: 700;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 87px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.advantages__key span {
+  margin-top: -22px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-persian-blue;
+
+  @include vp-1199 {
+    line-height: 30px;
+  }
+}
+
+.advantages__value {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px 0;
+
+  @include vp-1199 {
+    padding: 16px 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.advantages__value p {
+  margin: 0 0 5px 0;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    margin: 0 0 2px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.advantages__value span {
+  max-width: 227px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.advantages__item--central {
+  grid-column: 3/2;
+  grid-row: 1/2 span;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 37px 0 0;
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+  background-color: #1c3374;
+
+  @include vp-1199 {
+    grid-row: initial;
+    grid-column: 1/-1;
+    padding: 15px 0 0;
+    max-width: 442px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 27px;
+    padding: 20px 0 0;
+    min-height: 239px;
+    max-width: none;
+    box-shadow: 15px 0 0 #1c3374,
+      -15px 0 0 #1c3374;
+  }
+}
+
+.advantages__item--central h3 {
+  margin: 0;
+  font-size: 74px;
+  line-height: 111px;
+  background: none;
+  -webkit-text-fill-color: $color-default-white;
+}
+
+.advantages__item--central p {
+  margin: -16px 0 32px 0;
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 700;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin: -22px 0 14px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  @include vp-767 {
+    margin: -25px 0 8px;
+  }
+}
+
+.advantages__item--central span {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 200px;
+  color: $color-default-white;
+}
