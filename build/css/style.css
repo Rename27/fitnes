@@ -2084,6 +2084,167 @@ button,
   line-height: 22px;
 }
 
+.communication {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 337px;
+  grid-template-rows: 337px;
+}
+
+.free-training {
+  padding: 70px 170px 70px 30px;
+  background-color: #102654;
+}
+
+.free-training__wrapper {
+  margin-left: auto;
+  max-width: 410px;
+  background-color: #102654;
+}
+
+.free-training h1 {
+  margin: 0 0 37px;
+  font-family: "Bebas Neue", "Impact", "Charcoal", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+
+.free-training__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 27px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.free-training__form input {
+  padding: 6px 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+}
+
+.free-training__form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.free-training__form input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.free-training__form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.free-training__form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.free-training__form input::placeholder {
+  color: #ffffff;
+}
+
+.free-training__form button {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding: 15px 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+}
+
+.contacts {
+  padding: 70px 90px 70px 120px;
+  border-top: 1px solid #74819c;
+}
+
+.contacts h1 {
+  margin: 0 0 38px;
+  font-family: "Bebas Neue", "Impact", "Charcoal", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.5px;
+  color: #102654;
+}
+
+.contacts__wrapper {
+  margin-right: auto;
+  max-width: 410px;
+}
+
+.contacts__list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content -webkit-max-content;
+  -ms-grid-columns: max-content max-content;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
+  -webkit-column-gap: 120px;
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  row-gap: 18px;
+  margin: 0;
+  padding: 0 0 0 4px;
+}
+
+.contacts__list::after {
+  position: absolute;
+  width: 1px;
+  height: 88%;
+  top: 7px;
+  left: 57%;
+  background-color: #74819c;
+  content: "";
+}
+
+.contacts__item {
+  color: #102654;
+}
+
+.contacts__key {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__value {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contacts a {
+  color: inherit;
+}
+
+.contacts address {
+  font-style: normal;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2526,6 +2687,84 @@ button,
   .reviews__item {
     padding: 55px 64px 10px;
   }
+
+  .communication {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    -ms-grid-rows: none;
+    grid-template-rows: none;
+  }
+
+  .free-training {
+    padding: 70px 30px 67px 0;
+  }
+
+  .free-training {
+    padding: 70px 15px;
+  }
+
+  .free-training__wrapper {
+    margin: 0 auto;
+    max-width: 472px;
+  }
+
+  .free-training h1 {
+    margin: 0 0 31px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.3px;
+  }
+
+  .free-training__form {
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+  }
+
+  .contacts {
+    padding: 70px 100px 70px 70px;
+    border: none;
+  }
+
+  .contacts {
+    padding: 70px 15px;
+  }
+
+  .contacts h1 {
+    margin: 0 0 31px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.3px;
+  }
+
+  .contacts__wrapper {
+    margin: 0 auto;
+    max-width: 472px;
+  }
+
+  .contacts__list {
+    padding: 0;
+    row-gap: 23px;
+    -webkit-column-gap: 96px;
+    -moz-column-gap: 96px;
+    column-gap: 96px;
+  }
+
+  .contacts__list::after {
+    height: 89%;
+    top: 8px;
+    left: 56.4%;
+  }
+
+  .contacts__key {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts__value {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2936,5 +3175,63 @@ button,
   .reviews__item p {
     grid-column: 1/-1;
     text-align: center;
+  }
+
+  .free-training h1 {
+    margin: 0 0 33px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+
+  .free-training__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .free-training__form label {
+    margin: 0 0 32px;
+  }
+
+  .free-training__form label:last-of-type {
+    margin: 0 0 39px;
+  }
+
+  .contacts h1 {
+    margin: 0 0 34px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contacts__list::after {
+    position: initial;
+  }
+
+  .contacts__item {
+    margin: 0 0 21px;
+  }
+
+  .contacts__item:last-child {
+    margin: 0;
   }
 }

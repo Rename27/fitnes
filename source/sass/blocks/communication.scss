@@ -1,0 +1,10 @@
+.communication {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 337px;
+
+  @include vp-1199 {
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+}
