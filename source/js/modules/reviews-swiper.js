@@ -1,7 +1,7 @@
 import Swiper from '../vendor/swiper';
 
 // eslint-disable-next-line no-new
-new Swiper('.coaches__swiper', {
+new Swiper('.reviews__swiper', {
 
   navigation: {
     prevEl: '.swiper-button-prev',
@@ -12,20 +12,9 @@ new Swiper('.coaches__swiper', {
 
   loop: true,
 
-  spaceBetween: 40,
+  spaceBetween: 1000,
 
   mousewheel: {
     sensitivity: 1,
-  },
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
   },
 });

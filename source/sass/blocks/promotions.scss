@@ -55,7 +55,7 @@
 
   @include vp-1199 {
     grid-template-columns: none;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     row-gap: 30px;
   }
 }
