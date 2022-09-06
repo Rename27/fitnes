@@ -1,0 +1,130 @@
+.contacts {
+  padding: 70px 90px 70px 120px;
+  border-top: 1px solid #74819c;
+
+  @include vp-1199 {
+    padding: 70px 100px 70px 70px;
+    border: none;
+  }
+
+  @include vp-1199 {
+    padding: 70px 15px;
+  }
+}
+
+.contacts h1 {
+  margin: 0 0 38px;
+  font-family: $ff-alternative;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 1.5px;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin: 0 0 31px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.3px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 34px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.contacts__wrapper {
+  margin-right: auto;
+  max-width: 410px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    max-width: 472px;
+  }
+}
+
+.contacts__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 120px;
+  row-gap: 18px;
+  margin: 0;
+  padding: 0 0 0 4px;
+
+  &::after {
+    position: absolute;
+    width: 1px;
+    height: 88%;
+    top: 7px;
+    left: 57%;
+    background-color: #74819c;
+    content: "";
+  }
+
+  @include vp-1199 {
+    padding: 0;
+    row-gap: 23px;
+    column-gap: 96px;
+
+    &::after {
+      height: 89%;
+      top: 8px;
+      left: 56.4%;
+    }
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    &::after {
+      position: initial;
+    }
+  }
+}
+
+.contacts__item {
+  color: $color-sapphire;
+
+  @include vp-767 {
+    margin: 0 0 21px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.contacts__key {
+  margin: 0 0 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__value {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts a {
+  color: inherit;
+}
+
+.contacts address {
+  font-style: normal;
+}
