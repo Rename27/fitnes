@@ -197,7 +197,7 @@
       </section>
       <section class="coaches container">
         <h1>Тренеры</h1>
-        <div class="swiper">
+        <div class="coaches__swiper swiper">
           <ul class="coaches__list swiper-wrapper">
             <li class="coaches__item swiper-slide">
               <div class="coaches__image">
@@ -376,8 +376,8 @@
               </div>
             </li>
           </ul>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="coaches__swiper-button-prev swiper-button-prev"></div>
+          <div class="coaches__swiper-button-next swiper-button-next"></div>
         </div>
       </section>
       <section class="advantages">
@@ -404,7 +404,7 @@
                 <span>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</span>
               </div>
             </li>
-            <div class="advantages__item--central">
+            <div class="advantages__item advantages__item--central">
               <h3>100</h3>
               <p>Тренажеров</p>
               <span>Современные тренажеры на&nbsp;все группы мышц</span>
@@ -446,8 +446,8 @@
             <div class="promotions__image">
               <picture>
                 <source type="image/webp" srcset="
-              img/athlete@1x.webp 1x,
-              img/athlete@2x.webp 2x">
+                img/athlete@1x.webp 1x,
+                img/athlete@2x.webp 2x">
                 <!-- 1х: 280px; 2x: 560px -->
                 <img src="img/athlete@1x.jpg" srcset="img/athlete@2x.jpg 2x" alt="Картинка акции" width="280"
                   height="462">
@@ -466,6 +466,48 @@
               <a href="#">Подробнее</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="reviews container">
+        <h1>Отзывы</h1>
+        <div class="reviews__swiper swiper">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__image">
+                <picture>
+                  <source type="image/webp" srcset="
+                  img/comment-anna-orlova@1x.webp 1x,
+                  img/comment-anna-orlova@2x.webp 2x">
+                  <!-- 1х: 280px; 2x: 560px -->
+                  <img src="img/comment-anna-orlova@1x.jpg" srcset="img/comment-anna-orlova@2x.jpg 2x" alt="Аватар"
+                    width="80" height="80">
+                </picture>
+              </div>
+              <h2>Анна Орлова</h2>
+              <p>&laquo;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
+                персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
+            </li>
+            <li class="reviews__item swiper-slide">
+              <div class="reviews__image">
+                <picture>
+                  <source type="image/webp" srcset="
+                  img/comment-anna-orlova@1x.webp 1x,
+                  img/comment-anna-orlova@2x.webp 2x">
+                  <!-- 1х: 280px; 2x: 560px -->
+                  <img src="img/comment-anna-orlova@1x.jpg" srcset="img/comment-anna-orlova@2x.jpg 2x" alt="Аватар"
+                    width="80" height="80">
+                </picture>
+              </div>
+              <h2>Lorem ipsum</h2>
+              <p>&laquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, totam eveniet tempore nobis
+                quo
+                molestiae minus numquam amet tempora velit a voluptatem praesentium accusamus debitis laborum
+                temporibus,
+                sunt iure magni?&raquo;</p>
+            </li>
+          </ul>
+          <div class="reviews__swiper-button-prev swiper-button-prev"></div>
+          <div class="reviews__swiper-button-next swiper-button-next"></div>
         </div>
       </section>
     </main>

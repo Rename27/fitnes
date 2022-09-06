@@ -2,6 +2,7 @@ import { iosVhFix } from './utils/ios-vh-fix';
 import './modules/video';
 import './modules/tabs';
 import './modules/coach-swiper';
+import './modules/reviews-swiper';
 
 
 // ---------------------------------
