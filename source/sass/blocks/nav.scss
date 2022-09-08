@@ -8,6 +8,13 @@
   @include vp-1199 {
     padding: 0 0 0 16px;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+    margin: 0 0 20px;
+    padding: 0;
+    max-height: 135px;
+  }
 }
 
 .nav__item {
@@ -30,8 +37,18 @@
   }
 
   @include vp-767 {
+    margin: 0 76px 15px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
     &:first-of-type {
       display: block;
+    }
+
+    &:nth-child(odd) {
+      grid-column: 2/3;
     }
   }
 }
@@ -44,14 +61,15 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 19px;
-
-    &:first-of-type {
-      display: block;
-      font-family: $ff-alternative;
-      font-size: 20px;
-      line-height: 20px;
-      font-weight: 700;
-      letter-spacing: 0.6px;
-    }
   }
+}
+
+.nav__logo {
+  font-family: $ff-alternative;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: $color-default-white;
 }
