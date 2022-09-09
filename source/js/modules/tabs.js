@@ -30,7 +30,7 @@ const setPrice = (evt) => {
     prices[0].textContent = 7500;
     prices[1].textContent = 2550;
     prices[2].textContent = 4050;
-    pricesShadow[0].textContent = 750;
+    pricesShadow[0].textContent = 7500;
     pricesShadow[1].textContent = 2550;
     pricesShadow[2].textContent = 4050;
   }
