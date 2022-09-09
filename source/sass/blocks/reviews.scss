@@ -1,8 +1,9 @@
 .reviews {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 117px;
   width: 100%;
   max-width: 672px;
+  overflow-y: hidden;
 
   .swiper {
     position: initial;
@@ -10,34 +11,35 @@
 
   @include vp-1199 {
     padding-bottom: 100px;
-
-    .swiper-button-prev,
-    .swiper-rtl .swiper-button-next {
-      left: -27px;
-      top: 62.5%;
-    }
-
-    .swiper-button-next,
-    .swiper-rtl .swiper-button-prev {
-      right: -27px;
-      top: 62.5%;
-    }
-  }
-
-  @include vp-767 {
-    padding-bottom: 70px;
     max-width: none;
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-      left: -12px;
-      top: 51%;
+      left: 20px;
+      top: 48.5%;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
-      right: -12px;
-      top: 51%;
+      right: 20px;
+      top: 48.5%;
+    }
+  }
+
+  @include vp-767 {
+    padding-bottom: 30px;
+    max-width: none;
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: -13px;
+      top: 50.5%;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+      right: -13px;
+      top: 50.5%;
     }
 
     .swiper-button-prev::after,
@@ -124,8 +126,10 @@
 }
 
 .reviews__image img {
-  width: 68px;
-  height: 68px;
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .reviews__item h2 {

@@ -10,8 +10,6 @@ new Swiper('.reviews__swiper', {
 
   slidesPerView: 1,
 
-  loop: true,
-
   spaceBetween: 1000,
 
   mousewheel: {

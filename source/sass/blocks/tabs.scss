@@ -28,11 +28,29 @@
 .tabs__item {
   position: relative;
   margin-right: 46px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include vp-1199 {
+    margin-right: 55px;
+  }
+
+  @include vp-767 {
+    margin-right: 46px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.tabs__link {
+  display: inline-block;
   padding: 12px 0;
   font-size: 20px;
   line-height: 30px;
-  opacity: 0.5;
-  cursor: pointer;
 
   &--current {
     opacity: 1;
@@ -48,24 +66,14 @@
     }
   }
 
-  &:last-child {
-    margin: 0;
-  }
-
   @include vp-1199 {
-    margin-right: 55px;
     font-size: 18px;
     line-height: 27px;
   }
 
   @include vp-767 {
-    margin-right: 46px;
     padding: 2px 0 15px;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  &:hover {
-    opacity: 0.7;
   }
 }

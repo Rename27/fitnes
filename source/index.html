@@ -25,7 +25,7 @@
                 <p>Тренажёрный&nbsp;зал Групповые&nbsp;занятия Кардио-зона </p>
                 <h2>Омск</h2>
                 <h1>Фитнес центр</h1>
-                <a href="#">Купить абонемент</a>
+                <a href="#subscriptions">Купить абонемент</a>
               </div>
               <picture>
                 <source type="image/webp" srcset="
@@ -84,21 +84,27 @@
               </picture>
             </a>
             <button>
-              <img src="img/svg/video-btn-icon.svg" alt="Кнопка воспроизведения видео">
+              <img src="img/svg/video-btn-icon.svg" alt="Кнопка воспроизведения видео" width="100" height="100">
               <span class="visually-hidden">Запусить видео</span>
             </button>
           </div>
         </div>
       </section>
-      <section class="subscriptions">
+      <section class="subscriptions" id="subscriptions">
         <div class="container">
           <div class="subscriptions__wrapper">
             <h1>Абонементы</h1>
             <div class="subscriptions__tabs tabs">
               <ul class="tabs__list">
-                <li class="tabs__item tabs__item--current">1 месяц</li>
-                <li class="tabs__item">6 месяцев</li>
-                <li class="tabs__item">12 месяцев</li>
+                <li class="tabs__item">
+                  <a class="tabs__link tabs__link--current" href="#">1 месяц</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">6 месяцев</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">12 месяцев</a>
+                </li>
               </ul>
             </div>
             <div class="subscriptions__cards cards">
@@ -106,37 +112,43 @@
                 <li class="cards__item">
                   <h2>С тренером</h2>
                   <p>12 занятий</p>
-                  <h3>
+                  <div class="cards__price">
                     <span>5000</span>
-                    5000
-                    <svg width="30" height="42">
-                      <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                    </svg>
-                  </h3>
+                    <div class="cards__price-wrapper">
+                      <h3>5000</h3>
+                      <svg width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <a href="#">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
                   <h2>Дневной</h2>
                   <p>с 8:00 до 17:00</p>
-                  <h3>
+                  <div class="cards__price">
                     <span>1700</span>
-                    1700
-                    <svg width="30" height="42">
-                      <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                    </svg>
-                  </h3>
+                    <div class="cards__price-wrapper">
+                      <h3>1700</h3>
+                      <svg width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <a href="#">Купить абонемент</a>
                 </li>
                 <li class="cards__item">
                   <h2>Полный день</h2>
                   <p>с 8:00 до 22:00</p>
-                  <h3>
+                  <div class="cards__price">
                     <span>2700</span>
-                    2700
-                    <svg width="30" height="42">
-                      <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                    </svg>
-                  </h3>
+                    <div class="cards__price-wrapper">
+                      <h3>2700</h3>
+                      <svg width="30" height="42">
+                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <a href="#">Купить абонемент</a>
                 </li>
               </ul>
@@ -401,11 +413,11 @@
                 <span>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</span>
               </div>
             </li>
-            <div class="advantages__item advantages__item--central">
+            <li class="advantages__item advantages__item--central">
               <h3>100</h3>
               <p>Тренажеров</p>
               <span>Современные тренажеры на&nbsp;все группы мышц</span>
-            </div>
+            </li>
             <li class="advantages__item">
               <div class="advantages__key">
                 <p>350</p>
@@ -513,10 +525,10 @@
             <h1>Бесплатное занятие</h1>
             <form class="free-training__form" action="https://echo.htmlacademy.ru" method="get">
               <label>
-                <input type="text" name="name" placeholder="Имя" autocomplete="off">
+                <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
               </label>
               <label>
-                <input type="text" name="phone" placeholder="Телефон" autocomplete="off">
+                <input type="text" name="phone" placeholder="Телефон" autocomplete="off" required>
               </label>
               <button>Отправить</button>
             </form>
