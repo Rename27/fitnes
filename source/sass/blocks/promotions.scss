@@ -13,7 +13,7 @@
   }
 }
 
-.promotions h1 {
+.promotions h2 {
   margin: 0 0 49px;
   font-family: $ff-alternative;
   font-size: 49px;
@@ -39,13 +39,26 @@
 .promotions a {
   margin-top: auto;
   width: fit-content;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   font-weight: 700;
-  letter-spacing: 0.7px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border-bottom: 1px solid $color-default-white;
   color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+    border-radius: 1px;
+  }
 }
 
 .promotions__wrapper {
@@ -94,7 +107,7 @@
   font-weight: 700;
 }
 
-.promotions__text h2 {
+.promotions__text h3 {
   margin: 0 0 23px;
   font-size: 70px;
   line-height: 60px;
@@ -155,7 +168,7 @@
   flex-direction: column;
   padding: 28px;
   height: 211px;
-  color: $color-sapphire;
+  color: $color-resolution-blue;
   border: 7px solid $color-sapphire;
   border-image: linear-gradient(to right bottom, #d10a42, #00359f);
   border-image-slice: 1;
@@ -188,8 +201,12 @@
 }
 
 .promotions__item a {
-  letter-spacing: -0.6px;
+  letter-spacing: 0.6px;
   color: inherit;
   border-bottom: 1px solid $color-sapphire;
-}
 
+  &:focus {
+    outline: 2px solid $color-default-black;
+    border-radius: 1px;
+  }
+}

@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 56px 120px 56px;
   max-width: 1272px;
-  overflow-y: hidden;
+  overflow: hidden;
 
   .swiper {
     position: initial;
@@ -48,7 +48,7 @@
   }
 }
 
-.coaches h1 {
+.coaches h2 {
   margin: 0 0 50px 2px;
   font-family: $ff-alternative;
   font-size: 49px;
@@ -91,7 +91,7 @@
   }
 
   &:hover {
-    h2 {
+    h3 {
       display: none;
     }
 
@@ -124,7 +124,7 @@
   }
 }
 
-.coaches h2 {
+.coaches h3 {
   grid-column: 1/1;
   grid-row: 1/1;
   justify-self: center;
@@ -150,7 +150,7 @@
   visibility: hidden;
 }
 
-.coaches__description h3 {
+.coaches__description h4 {
   margin: 0;
   font-size: 18px;
   line-height: 27px;

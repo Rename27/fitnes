@@ -14,13 +14,14 @@
   }
 }
 
-.advantages h1 {
+.advantages h2 {
   margin: 0 0 70px;
+  text-align: center;
   font-family: $ff-alternative;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 1.5px;
-  text-align: center;
+  color: $color-sapphire;
 
   @include vp-1199 {
     margin: 0 0 48px;
@@ -36,7 +37,8 @@
   }
 }
 
-.advantages__wrapper {
+.advantages__list {
+  position: relative;
   display: grid;
   grid-template-rows: 155px 155px;
   grid-template-columns: 341px auto 341px;
@@ -45,10 +47,29 @@
   max-width: 1040px;
   list-style-type: none;
 
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    width: 340px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+    content: "";
+  }
+
+  &::after {
+    right: 0;
+  }
+
   @include vp-1199 {
     grid-template-rows: 114px 239px 112px;
     grid-template-columns: 338px 338px;
     justify-content: center;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   @include vp-767 {
@@ -56,11 +77,6 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-.advantages__list {
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages__item {
@@ -164,6 +180,7 @@
   flex-direction: column;
   margin: 0;
   padding: 20px 0;
+  color: $color-sapphire;
 
   @include vp-1199 {
     padding: 16px 0;
@@ -205,7 +222,7 @@
   width: 100%;
   max-width: 240px;
   text-align: center;
-  background-color: #1c3374;
+  background-color: $color-resolution-blue;
 
   @include vp-1199 {
     grid-row: initial;
@@ -219,8 +236,8 @@
     padding: 20px;
     min-height: 239px;
     max-width: none;
-    box-shadow: 15px 0 0 #1c3374,
-      -15px 0 0 #1c3374;
+    box-shadow: 15px 0 0 $color-resolution-blue,
+      -15px 0 0 $color-resolution-blue;
   }
 }
 

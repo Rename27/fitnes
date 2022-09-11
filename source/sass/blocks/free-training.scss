@@ -27,7 +27,7 @@
   }
 }
 
-.free-training h1 {
+.free-training h2 {
   margin: 0 0 37px;
   font-family: $ff-alternative;
   font-size: 49px;
@@ -93,6 +93,11 @@
   &::placeholder {
     color: $color-default-white;
   }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+    border-radius: 1px;
+  }
 }
 
 .free-training__form button {
@@ -107,4 +112,17 @@
   color: $color-default-white;
   background-color: transparent;
   border: 3px solid $color-default-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+    border-radius: 4px;
+  }
 }

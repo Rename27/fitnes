@@ -51,7 +51,7 @@
   }
 }
 
-.promo__text h1 {
+.promo__text h2 {
   margin: 0;
   max-width: 200px;
   font-family: $ff-alternative;
@@ -98,6 +98,19 @@
     line-height: 12px;
     border: 2px solid $color-default-white;
     min-width: 202px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-default-white;
+    border-radius: 4px;
   }
 }
 

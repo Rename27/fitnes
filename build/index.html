@@ -12,14 +12,24 @@
 
 <body>
   <div class="wrapper">
-    <main>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#">
+            <svg width="89" height="20">
+              <use xlink:href="img/sprite_auto.svg#identic"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Supergym</span>
+          </a>
+          <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
       <section class="main-screen">
         <div class="container">
           <div class="main-screen__wrapper">
-            <div class="main-screen__header ">
-              <a class="main-screen__logo" href="#">Supergym</a>
-              <a class="main-screen__phone" href="tel:+78005555555">8-800-555-55-55</a>
-            </div>
             <div class="main-screen__content">
               <div class="main-screen__text">
                 <p>Тренажёрный&nbsp;зал Групповые&nbsp;занятия Кардио-зона </p>
@@ -54,8 +64,8 @@
       </section>
       <section class="gym container">
         <div class="gym__text">
-          <h1>Тренажерный зал</h1>
-          <h2>Просторный зал площадью 900&nbsp;кв/м</h2>
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
           <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела
             и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
@@ -93,65 +103,156 @@
       <section class="subscriptions" id="subscriptions">
         <div class="container">
           <div class="subscriptions__wrapper">
-            <h1>Абонементы</h1>
+            <h2>Абонементы</h2>
             <div class="subscriptions__tabs tabs">
-              <ul class="tabs__list">
-                <li class="tabs__item">
-                  <a class="tabs__link tabs__link--current" href="#">1 месяц</a>
-                </li>
-                <li class="tabs__item">
-                  <a class="tabs__link" href="#">6 месяцев</a>
-                </li>
-                <li class="tabs__item">
-                  <a class="tabs__link" href="#">12 месяцев</a>
-                </li>
-              </ul>
-            </div>
-            <div class="subscriptions__cards cards">
-              <ul class="cards__list">
-                <li class="cards__item">
-                  <h2>С тренером</h2>
-                  <p>12 занятий</p>
-                  <div class="cards__price">
-                    <span>5000</span>
-                    <div class="cards__price-wrapper">
-                      <h3>5000</h3>
-                      <svg width="30" height="42">
-                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                      </svg>
+              <div class="tabs__controls">
+                <label class="tabs__control">
+                  <input class="tabs__input tabs__input--1 tabs__input--current" type="radio" name="tabs" checked />
+                  <span class="tabs__label">1 месяц</span>
+                </label>
+                <label class="tabs__control">
+                  <input class="tabs__input tabs__input--2" type="radio" name="tabs" />
+                  <span class="tabs__label">6 месяцев</span>
+                </label>
+                <label class="tabs__control">
+                  <input class="tabs__input tabs__input--3" type="radio" name="tabs" />
+                  <span class="tabs__label">12 месяцев</span>
+                </label>
+              </div>
+              <div class="tabs__cards">
+                <ul class="tabs__list tabs__list--1">
+                  <li class="tabs__item">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <div class="tabs__price">
+                      <span>5000</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>5000</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <a href="#">Купить абонемент</a>
-                </li>
-                <li class="cards__item">
-                  <h2>Дневной</h2>
-                  <p>с 8:00 до 17:00</p>
-                  <div class="cards__price">
-                    <span>1700</span>
-                    <div class="cards__price-wrapper">
-                      <h3>1700</h3>
-                      <svg width="30" height="42">
-                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                      </svg>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="tabs__price">
+                      <span>1700</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>1700</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <a href="#">Купить абонемент</a>
-                </li>
-                <li class="cards__item">
-                  <h2>Полный день</h2>
-                  <p>с 8:00 до 22:00</p>
-                  <div class="cards__price">
-                    <span>2700</span>
-                    <div class="cards__price-wrapper">
-                      <h3>2700</h3>
-                      <svg width="30" height="42">
-                        <use xlink:href="img/sprite_auto.svg#rouble"></use>
-                      </svg>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="tabs__price">
+                      <span>2700</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>2700</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <a href="#">Купить абонемент</a>
-                </li>
-              </ul>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__list tabs__list--2">
+                  <li class="tabs__item">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <div class="tabs__price">
+                      <span>7500</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>7500</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="tabs__price">
+                      <span>2550</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>2550</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="tabs__price">
+                      <span>4050</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>4050</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+                <ul class="tabs__list tabs__list--3">
+                  <li class="tabs__item">
+                    <h3>С тренером</h3>
+                    <p>12 занятий</p>
+                    <div class="tabs__price">
+                      <span>10000</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>10000</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Дневной</h3>
+                    <p>с 8:00 до 17:00</p>
+                    <div class="tabs__price">
+                      <span>3400</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>3400</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                  <li class="tabs__item">
+                    <h3>Полный день</h3>
+                    <p>с 8:00 до 22:00</p>
+                    <div class="tabs__price">
+                      <span>5400</span>
+                      <div class="tabs__price-wrapper">
+                        <h4>5400</h4>
+                        <svg width="30" height="42">
+                          <use xlink:href="img/sprite_auto.svg#rouble"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <a href="#">Купить абонемент</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="subscriptions__image">
               <picture>
@@ -167,26 +268,26 @@
         </div>
       </section>
       <section class="promo container">
-        <h1 class="visually-hidden">Промо блок</h1>
+        <h2 class="visually-hidden">Промо блок</h2>
         <div class="promo__content">
           <div class="promo__wrapper">
             <div class="promo__text">
-              <h1>SUPER GAMES</h1>
+              <h2>SUPER GAMES</h2>
               <p>Ежегодные соревнования по&nbsp;CrossFit</p>
               <a href="#">заполнить заявку</a>
               <div class="promo__date date">
                 <div class="date__day">
-                  <h2>Дата</h2>
+                  <h3>Дата</h3>
                   <div class="date__wrapper">
-                    <h3>7</h3>
+                    <h4>7</h4>
                     <p>Марта</p>
                     <p>2019</p>
                   </div>
                 </div>
                 <div class="date__time">
-                  <h2>Время</h2>
+                  <h3>Время</h3>
                   <div class="date__wrapper">
-                    <h3>12:00</h3>
+                    <h4>12:00</h4>
                   </div>
                 </div>
               </div>
@@ -205,7 +306,7 @@
         </div>
       </section>
       <section class="coaches container">
-        <h1>Тренеры</h1>
+        <h2>Тренеры</h2>
         <div class="coaches__swiper swiper">
           <ul class="coaches__list swiper-wrapper">
             <li class="coaches__item swiper-slide">
@@ -218,10 +319,10 @@
                   <img src="img/coach-anna-pavlovna@1x.jpg" srcset="img/coach-anna-pavlovna@2x.jpg 2x"
                     alt="Тренер Анна Павлова" width="260" height="294">
                 </picture>
-                <h2>Анна Павлова</h2>
+                <h3>Анна Павлова</h3>
               </div>
               <div class="coaches__description">
-                <h3>Анна Павлова</h3>
+                <h4>Анна Павлова</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -240,10 +341,10 @@
                   <img src="img/coach-alex-lavrov@1x.jpg" srcset="img/coach-alex-lavrov@2x.jpg 2x"
                     alt="Тренер Алексей Лавров" width="260" height="294">
                 </picture>
-                <h2>Алексей Лавров</h2>
+                <h3>Алексей Лавров</h3>
               </div>
               <div class="coaches__description">
-                <h3>Алексей Лавров</h3>
+                <h4>Алексей Лавров</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -262,10 +363,10 @@
                   <img src="img/coach-alexander-pashkov@1x.jpg" srcset="img/coach-alexander-pashkov@2x.jpg 2x"
                     alt="Тренер Александр Пашков" width="260" height="294">
                 </picture>
-                <h2>Александр Пашков</h2>
+                <h3>Александр Пашков</h3>
               </div>
               <div class="coaches__description">
-                <h3>Александр Пашков</h3>
+                <h4>Александр Пашков</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -284,10 +385,10 @@
                   <img src="img/coach-maria-ketova@1x.jpg" srcset="img/coach-maria-ketova@2x.jpg 2x"
                     alt="Тренер Мария Кетова" width="260" height="294">
                 </picture>
-                <h2>Мария Кетова</h2>
+                <h3>Мария Кетова</h3>
               </div>
               <div class="coaches__description">
-                <h3>Мария Кетова</h3>
+                <h4>Мария Кетова</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -306,10 +407,10 @@
                   <img src="img/coach-anna-pavlovna@1x.jpg" srcset="img/coach-anna-pavlovna@2x.jpg 2x"
                     alt="Тренер Анна Павлова" width="260" height="294">
                 </picture>
-                <h2>Анна Павлова</h2>
+                <h3>Анна Павлова</h3>
               </div>
               <div class="coaches__description">
-                <h3>Анна Павлова</h3>
+                <h4>Анна Павлова</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -328,10 +429,10 @@
                   <img src="img/coach-alex-lavrov@1x.jpg" srcset="img/coach-alex-lavrov@2x.jpg 2x"
                     alt="Тренер Алексей Лавров" width="260" height="294">
                 </picture>
-                <h2>Алексей Лавров</h2>
+                <h3>Алексей Лавров</h3>
               </div>
               <div class="coaches__description">
-                <h3>Алексей Лавров</h3>
+                <h4>Алексей Лавров</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -350,10 +451,10 @@
                   <img src="img/coach-alexander-pashkov@1x.jpg" srcset="img/coach-alexander-pashkov@2x.jpg 2x"
                     alt="Тренер Александр Пашков" width="260" height="294">
                 </picture>
-                <h2>Александр Пашков</h2>
+                <h3>Александр Пашков</h3>
               </div>
               <div class="coaches__description">
-                <h3>Александр Пашков</h3>
+                <h4>Александр Пашков</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -372,10 +473,10 @@
                   <img src="img/coach-maria-ketova@1x.jpg" srcset="img/coach-maria-ketova@2x.jpg 2x"
                     alt="Тренер Мария Кетова" width="260" height="294">
                 </picture>
-                <h2>Мария Кетова</h2>
+                <h3>Мария Кетова</h3>
               </div>
               <div class="coaches__description">
-                <h3>Мария Кетова</h3>
+                <h4>Мария Кетова</h4>
                 <p>CrossFit</p>
                 <ul class="coaches__description-list">
                   <li class="coaches__description-item">Certified Level 3 Trainer</li>
@@ -391,8 +492,8 @@
       </section>
       <section class="advantages">
         <div class="container">
-          <h1>Наши преимущества</h1>
-          <ul class="advantages__wrapper">
+          <h2>Наши преимущества</h2>
+          <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__key">
                 <p>900</p>
@@ -443,12 +544,12 @@
         </div>
       </section>
       <section class="promotions container">
-        <h1>Акции</h1>
+        <h2>Акции</h2>
         <div class="promotions__wrapper">
           <div class="promotions__content">
             <div class="promotions__text">
               <span>Год</span>
-              <h2>4999</h2>
+              <h3>4999</h3>
               <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
               <a href="#">Подробнее</a>
             </div>
@@ -465,12 +566,12 @@
           </div>
           <ul class="promotions__list">
             <li class="promotions__item">
-              <h2>Месяц бесплатно</h2>
+              <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент&nbsp;в&nbsp;подарок</p>
               <a href="#">Подробнее</a>
             </li>
             <li class="promotions__item">
-              <h2>Скидка&nbsp;20%</h2>
+              <h3>Скидка&nbsp;20%</h3>
               <p>Корпоративный фитнес с&nbsp;командой</p>
               <a href="#">Подробнее</a>
             </li>
@@ -478,7 +579,7 @@
         </div>
       </section>
       <section class="reviews container">
-        <h1>Отзывы</h1>
+        <h2>Отзывы</h2>
         <div class="reviews__swiper swiper">
           <ul class="reviews__list swiper-wrapper">
             <li class="reviews__item swiper-slide">
@@ -492,7 +593,7 @@
                     width="80" height="80">
                 </picture>
               </div>
-              <h2>Анна Орлова</h2>
+              <h3>Анна Орлова</h3>
               <p>&laquo;Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют,
                 персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей&raquo;</p>
             </li>
@@ -507,7 +608,7 @@
                     width="80" height="80">
                 </picture>
               </div>
-              <h2>Lorem ipsum</h2>
+              <h3>Lorem ipsum</h3>
               <p>&laquo;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, totam eveniet tempore nobis
                 quo
                 molestiae minus numquam amet tempora velit a voluptatem praesentium accusamus debitis laborum
@@ -522,13 +623,15 @@
       <section class="communication">
         <div class="free-training">
           <div class="free-training__wrapper">
-            <h1>Бесплатное занятие</h1>
+            <h2>Бесплатное занятие</h2>
             <form class="free-training__form" action="https://echo.htmlacademy.ru" method="get">
               <label>
                 <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                <span class="visually-hidden">Имя</span>
               </label>
               <label>
-                <input type="text" name="phone" placeholder="Телефон" autocomplete="off" required>
+                <input type="number" name="phone" placeholder="Телефон" autocomplete="off" required>
+                <span class="visually-hidden">Телефон</span>
               </label>
               <button>Отправить</button>
             </form>
@@ -536,7 +639,7 @@
         </div>
         <div class="contacts">
           <div class="contacts__wrapper">
-            <h1>Контакты</h1>
+            <h2>Контакты</h2>
             <dl class="contacts__list">
               <div class="contacts__item">
                 <dt class="contacts__key">Адрес:</dt>
@@ -566,11 +669,21 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo" href="#">Supergym</a>
+          <a class="footer__logo" href="#">
+            <svg width="89" height="20">
+              <use xlink:href="img/sprite_auto.svg#identic"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Supergym</span>
+          </a>
           <nav class="footer__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__logo" href="#">Supergym</a>
+                <a class="nav__logo" href="#">
+                  <svg width="89" height="20">
+                    <use xlink:href="img/sprite_auto.svg#identic"></use>
+                  </svg>
+                  <span class="visually-hidden">Логотип Supergym</span>
+                </a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Услуги</a>
