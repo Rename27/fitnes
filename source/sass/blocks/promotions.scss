@@ -184,10 +184,17 @@
   }
 }
 
-.promotions__item h2 {
+.promotions__item h3 {
   margin: 0 0 12px;
   font-size: 26px;
   line-height: 19px;
+
+  @include vp-1199 {
+
+    margin: 0 0 16px;
+
+    font-size: 26px;
+  }
 }
 
 .promotions__item p {
