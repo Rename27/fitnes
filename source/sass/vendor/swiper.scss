@@ -212,7 +212,7 @@
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-family: swiper-icons;
+  font-family: "swiper-icons", sans-serif;
   font-size: var(--swiper-navigation-size);
   letter-spacing: 0;
   text-transform: none;
