@@ -1,12 +1,22 @@
 .reviews {
   position: relative;
-  padding-bottom: 117px;
+  padding-bottom: 120px;
   width: 100%;
   max-width: 672px;
   overflow: hidden;
 
   .swiper {
     position: initial;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    top: 220px;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    top: 220px;
   }
 
   @include vp-1199 {
@@ -16,13 +26,13 @@
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
       left: 20px;
-      top: 48.5%;
+      top: 203px;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
       right: 20px;
-      top: 48.5%;
+      top: 203px;
     }
   }
 

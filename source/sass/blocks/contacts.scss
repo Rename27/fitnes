@@ -144,11 +144,6 @@
   &:active {
     opacity: 0.6;
   }
-
-  &:focus {
-    outline: 2px solid $color-default-black;
-    border-radius: 4px;
-  }
 }
 
 .contacts address {

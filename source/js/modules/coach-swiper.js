@@ -14,10 +14,6 @@ new Swiper('.coaches__swiper', {
 
   spaceBetween: 40,
 
-  mousewheel: {
-    sensitivity: 1,
-  },
-
   breakpoints: {
     768: {
       slidesPerView: 2,

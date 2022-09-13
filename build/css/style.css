@@ -1217,11 +1217,6 @@ button,
   grid-row: 1/1;
   -ms-grid-column: 1;
   grid-column: 1/1;
-  cursor: pointer;
-}
-
-.video:hover button {
-  opacity: 1;
 }
 
 .video__poster {
@@ -1264,6 +1259,10 @@ button,
   border: 8px solid transparent;
   border-left: 13px solid #ffffff;
   content: "";
+}
+
+.video button:hover {
+  opacity: 1;
 }
 
 .subscriptions {
@@ -1362,6 +1361,11 @@ button,
 
 .tabs__input:checked ~ .tabs__label {
   opacity: 1;
+}
+
+.tabs__input:focus ~ span {
+  outline: 2px solid #102654;
+  border-radius: 4px;
 }
 
 .tabs__list {
@@ -1657,13 +1661,23 @@ button,
 
 .coaches {
   position: relative;
-  padding: 0 56px 120px 56px;
-  max-width: 1272px;
+  padding: 0 85px 120px;
+  max-width: 1330px;
   overflow: hidden;
 }
 
 .coaches .swiper {
   position: initial;
+}
+
+.coaches .swiper-button-prev,
+.coaches .swiper-rtl .swiper-button-next {
+  left: 5px;
+}
+
+.coaches .swiper-button-next,
+.coaches .swiper-rtl .swiper-button-prev {
+  right: 5px;
 }
 
 .coaches h2 {
@@ -1750,8 +1764,10 @@ button,
   -ms-flex-align: center;
   align-items: center;
   padding: 51px 0 10px;
+  max-height: 294px;
   color: #ffffff;
   background: rgba(16, 38, 84, 0.89);
+  overflow-y: scroll;
   visibility: hidden;
 }
 
@@ -1801,7 +1817,7 @@ button,
 
 .advantages {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 97px;
   background-color: #f8f9fc;
 }
 
@@ -1819,8 +1835,8 @@ button,
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 155px 155px;
-  grid-template-rows: 155px 155px;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 341px auto 341px;
   grid-template-columns: 341px auto 341px;
   margin: 0 auto;
@@ -1832,7 +1848,7 @@ button,
 .advantages__list::before,
 .advantages__list::after {
   position: absolute;
-  top: 50%;
+  top: 46%;
   width: 340px;
   height: 2px;
   background-color: rgba(209, 10, 66, 0.2);
@@ -1861,7 +1877,7 @@ button,
 
 .advantages__item:nth-child(5n + 4),
 .advantages__item:nth-child(5n + 5) {
-  margin: 54px 0 0 0;
+  margin: 43px 0 0;
 }
 
 .advantages__key {
@@ -1938,6 +1954,7 @@ button,
   align-items: center;
   padding: 37px 0 0;
   width: 100%;
+  max-height: 307px;
   max-width: 240px;
   text-align: center;
   background-color: #1c3374;
@@ -2061,7 +2078,7 @@ button,
 }
 
 .promotions__image img {
-  min-height: 462px;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: -43px 0;
@@ -2088,7 +2105,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 28px;
-  height: 211px;
+  min-height: 211px;
   color: #1c3374;
   border: 7px solid #102654;
   -o-border-image: -o-linear-gradient(left top, #d10a42, #00359f);
@@ -2126,7 +2143,7 @@ button,
 
 .reviews {
   position: relative;
-  padding-bottom: 117px;
+  padding-bottom: 120px;
   width: 100%;
   max-width: 672px;
   overflow: hidden;
@@ -2134,6 +2151,16 @@ button,
 
 .reviews .swiper {
   position: initial;
+}
+
+.reviews .swiper-button-prev,
+.reviews .swiper-rtl .swiper-button-next {
+  top: 220px;
+}
+
+.reviews .swiper-button-next,
+.reviews .swiper-rtl .swiper-button-prev {
+  top: 220px;
 }
 
 .reviews h2 {
@@ -2292,6 +2319,7 @@ button,
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #ffffff;
+  cursor: pointer;
 }
 
 .free-training__form button:hover {
@@ -2391,11 +2419,6 @@ button,
 
 .contacts a:active {
   opacity: 0.6;
-}
-
-.contacts a:focus {
-  outline: 2px solid #030a1a;
-  border-radius: 4px;
 }
 
 .contacts address {
@@ -2805,7 +2828,7 @@ button,
 
   .coaches {
     padding-bottom: 100px;
-    max-width: none;
+    max-width: 780px;
   }
 
   .coaches .swiper-button-prev,
@@ -2845,7 +2868,7 @@ button,
 
   .advantages {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   .advantages h2 {
@@ -2941,13 +2964,17 @@ button,
   }
 
   .promotions__content {
-    -ms-grid-columns: 279px 1fr;
-    grid-template-columns: 279px 1fr;
+    -ms-grid-columns: 1.4fr 2fr;
+    grid-template-columns: 1.4fr 2fr;
+  }
+
+  .promotions__text p {
+    max-width: 250px;
   }
 
   .promotions__image img {
     width: 100%;
-    max-height: 462px;
+    min-height: 462px;
     -o-object-position: 0;
     object-position: 0;
   }
@@ -2981,13 +3008,13 @@ button,
   .reviews .swiper-button-prev,
   .reviews .swiper-rtl .swiper-button-next {
     left: 20px;
-    top: 48.5%;
+    top: 203px;
   }
 
   .reviews .swiper-button-next,
   .reviews .swiper-rtl .swiper-button-prev {
     right: 20px;
-    top: 48.5%;
+    top: 203px;
   }
 
   .reviews h2 {
@@ -3020,8 +3047,8 @@ button,
   }
 
   .free-training__wrapper {
-    margin: 0 auto 0 118px;
-    max-width: 472px;
+    margin: 0 148px 0 118px;
+    max-width: none;
   }
 
   .free-training h2 {
@@ -3209,10 +3236,14 @@ button,
     grid-row: 2/3;
   }
 
+  .video {
+    width: 100%;
+  }
+
   .video iframe,
   .video picture,
   .video img {
-    width: 320px;
+    width: 100%;
     height: 167px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -3304,6 +3335,7 @@ button,
 
   .coaches {
     padding-bottom: 70px;
+    max-width: 320px;
   }
 
   .coaches .swiper-button-prev,
@@ -3333,6 +3365,10 @@ button,
   .coaches img {
     width: 228px;
     height: 274px;
+  }
+
+  .coaches__description {
+    max-height: 274px;
   }
 
   .advantages {
@@ -3420,8 +3456,8 @@ button,
   .promotions__content {
     -ms-grid-columns: none;
     grid-template-columns: none;
-    -ms-grid-rows: 299px 299px;
-    grid-template-rows: 299px 299px;
+    -ms-grid-rows: 299px 1fr;
+    grid-template-rows: 299px 1fr;
   }
 
   .promotions__text {
@@ -3437,10 +3473,11 @@ button,
   }
 
   .promotions__image img {
-    min-height: initial;
-    max-height: 299px;
+    min-height: 299px;
+    max-height: initial;
     -o-object-position: 0 -6px;
     object-position: 0 -6px;
+    aspect-ratio: 1/1;
   }
 
   .promotions__list {

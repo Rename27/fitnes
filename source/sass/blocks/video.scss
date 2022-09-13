@@ -15,7 +15,6 @@
   img {
     grid-row: 1/1;
     grid-column: 1/1;
-    cursor: pointer;
   }
 
   @include vp-1199 {
@@ -28,17 +27,15 @@
   }
 
   @include vp-767 {
+    width: 100%;
+
     & iframe,
     picture,
     img {
-      width: 320px;
+      width: 100%;
       height: 167px;
       object-fit: cover;
     }
-  }
-
-  &:hover button {
-    opacity: 1;
   }
 }
 
@@ -86,5 +83,9 @@
       width: 73px;
       height: 73px;
     }
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }

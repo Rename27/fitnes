@@ -81,6 +81,11 @@
   &:checked ~ .tabs__label {
     opacity: 1;
   }
+
+  &:focus ~ span {
+    outline: 2px solid $color-sapphire;
+    border-radius: 4px;
+  }
 }
 
 .tabs__list {

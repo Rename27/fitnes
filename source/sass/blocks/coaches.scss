@@ -1,16 +1,26 @@
 .coaches {
   position: relative;
-  padding: 0 56px 120px 56px;
-  max-width: 1272px;
+  padding: 0 85px 120px;
+  max-width: 1330px;
   overflow: hidden;
 
   .swiper {
     position: initial;
   }
 
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 5px;
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 5px;
+  }
+
   @include vp-1199 {
     padding-bottom: 100px;
-    max-width: none;
+    max-width: 780px;
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
@@ -27,7 +37,7 @@
 
   @include vp-767 {
     padding-bottom: 70px;
-
+    max-width: 320px;
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
@@ -145,9 +155,16 @@
   flex-direction: column;
   align-items: center;
   padding: 51px 0 10px;
+  max-height: 294px;
+
   color: $color-default-white;
   background: rgba($color-sapphire, 0.89);
+  overflow-y: scroll;
   visibility: hidden;
+
+  @include vp-767 {
+    max-height: 274px;
+  }
 }
 
 .coaches__description h4 {
