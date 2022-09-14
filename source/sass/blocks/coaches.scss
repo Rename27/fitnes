@@ -10,12 +10,12 @@
 
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
-    left: 5px;
+    left: 18px;
   }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
-    right: 5px;
+    right: 18px;
   }
 
   @include vp-1199 {
@@ -24,14 +24,14 @@
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-      left: 28px;
-      top: 49%;
+      left: 35px;
+      top: 48.5%;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
       right: 28px;
-      top: 49%;
+      top: 48.5%;
     }
   }
 
@@ -41,14 +41,14 @@
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-      left: -12px;
-      top: 51%;
+      left: 2px;
+      top: 50.5%;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
-      right: -12px;
-      top: 51%;
+      right: 2px;
+      top: 50.5%;
     }
 
     .swiper-button-prev::after,

@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 120px;
   width: 100%;
-  max-width: 672px;
+  max-width: 720px;
   overflow: hidden;
 
   .swiper {
@@ -11,11 +11,13 @@
 
   .swiper-button-prev,
   .swiper-rtl .swiper-button-next {
+    left: 13px;
     top: 220px;
   }
 
   .swiper-button-next,
   .swiper-rtl .swiper-button-prev {
+    right: 13px;
     top: 220px;
   }
 
@@ -25,13 +27,13 @@
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-      left: 20px;
+      left: 35px;
       top: 203px;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
-      right: 20px;
+      right: 35px;
       top: 203px;
     }
   }
@@ -42,14 +44,14 @@
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
-      left: -13px;
-      top: 50.5%;
+      left: 1px;
+      top: 240px;
     }
 
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
-      right: -13px;
-      top: 50.5%;
+      right: 1px;
+      top: 240px;
     }
 
     .swiper-button-prev::after,
