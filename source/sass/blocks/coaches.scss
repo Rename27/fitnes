@@ -37,7 +37,8 @@
 
   @include vp-767 {
     padding-bottom: 70px;
-    max-width: 320px;
+    width: 100%;
+    max-width: none;
 
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
@@ -100,6 +101,11 @@
     justify-content: center;
   }
 
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
   &:hover {
     h3 {
       display: none;
@@ -116,6 +122,10 @@
   grid-row: 1/1;
   display: grid;
   width: fit-content;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .coaches picture,
@@ -129,8 +139,8 @@
   }
 
   @include vp-767 {
-    width: 228px;
-    height: 274px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -163,7 +173,9 @@
   visibility: hidden;
 
   @include vp-767 {
-    max-height: 274px;
+    width: 100%;
+    height: 100%;
+    max-height: none;
   }
 }
 
